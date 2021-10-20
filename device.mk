@@ -53,8 +53,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.boot.fingerprintbstate=orange
 
+# Authsecret
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor
+
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
     com.dsi.ant@1.0.vendor \
@@ -110,13 +116,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm@1.4-service.clearkey
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V1-ndk_platform \
+    android.hardware.graphics.common-V1-ndk_platform.vendor \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -149,6 +158,11 @@ LOC_HIDL_VERSION = 4.0
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
+    android.hardware.gatekeeper@1.0.vendor
+
+
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gatekeeper.disable_spu=true
 
@@ -196,6 +210,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
 
+PRODUCT_PACKAGES += \
+   android.hardware.keymaster@4.1 \
+   android.hardware.keymaster@4.1.vendor
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus8
@@ -203,6 +221,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1
+
+# Neural Networks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -232,6 +254,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.system.net.netd@1.1 \
+    android.system.net.netd@1.1.vendor
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -274,6 +305,10 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
+
+# QTI Trusted UI
+PRODUCT_PACKAGES += \
+    android.hidl.memory.block@1.0.vendor \
 
 # Update Engine
 PRODUCT_PACKAGES += \
