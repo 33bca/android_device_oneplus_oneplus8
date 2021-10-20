@@ -53,21 +53,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7
 
 # Biometrics
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/pa/config/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.aospa.biometrics.fingerprint.inscreen.xml
-
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.2-service.oneplus8 \
-    vendor.aospa.biometrics.fingerprint.inscreen@1.0-service \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.oneplus.fingerprint.extension@1.0.vendor
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.sys.fod.pos.x=453 \
-    persist.sys.fod.pos.y=1823 \
-    persist.sys.fod.size=174
-
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.boot.fingerprintbstate=orange
 
