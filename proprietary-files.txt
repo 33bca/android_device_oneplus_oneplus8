@@ -331,7 +331,6 @@ vendor/lib64/libvl53l1_daemon.so|027fdb723552aa8b1bbe83fb8d116155165346c0
 vendor/lib64/libyuv2.so|33adb1fa71d6fd749b07e00ea0ff9fa5bc67de79
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|9bb0994cdbf80b14148d5472173391c48869bf19
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|debd842a09148a1db1767a367bc87e4794e67bd3
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1820b871dcf6b7dfc42a4a686bf103b9b484e351
 
 # Camera - OOS (OP8)
 vendor/etc/camera/ashdr/ncf_pack_imx481.ncf|606c3f7ec2ce68d33b7391d74ebc253f4798ebc5
@@ -397,6 +396,9 @@ vendor/lib64/libcamerapostproc.so|584819f15d81c524705366e2adc4b7fdcfc96334
 vendor/lib64/libdualcam_image_optical_zoom.so|da34a55b9feab080f8bbb5d03671d48946328214
 vendor/lib64/libdualcam_optical_zoom_control.so|10f644a88ed9fab4902743ac06d2afc714ed06a5
 vendor/lib64/libdualcam_video_optical_zoom.so|10cd840e438828eb6dd5d871ba9ce470627d4650
+
+# Camera - CUSTOM PATCHED
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1820b871dcf6b7dfc42a4a686bf103b9b484e351
 
 # CNE
 -vendor/app/CACertService/CACertService.apk
