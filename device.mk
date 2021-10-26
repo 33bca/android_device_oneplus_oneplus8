@@ -263,6 +263,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
 
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.fflag.override.settings_provider_model=false
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/row/kona_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmi26x_row.json \
