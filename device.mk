@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.disable_screen_decorations=true \
     persist.sys.sf.native_mode=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.disable_mask_layer_hint=1 \
