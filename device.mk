@@ -267,6 +267,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.safailnet.rc
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/row/kona_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmi26x_row.json \
