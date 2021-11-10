@@ -1163,14 +1163,6 @@ vendor/lib64/libssc.so|383307d598c83f1f99625c19a8600a48953a2ef6
 vendor/lib64/sensors.hal.tof.so|6b11c7b2f7afbe6b13f3672671a9458f9f9f0728
 vendor/lib64/sensors.ssc.so|a0f7667f3af156aaf3ab9c779fb3ed2bfb554473
 
-# SNS (Calibration) - OOS
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|afcdd4bed3e2edb5eee12621144791461b2d585f
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc|449c88778d880c0d47cc4d651fc60c4c424c1a3f
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml|9b29c315f6c8b70ee22731cf0af420573c0189a9
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|f2cec75f8e59265da71a71156337717564a1ade3
-vendor/lib64/libsensorcal.so|1238be0d7ffd876d4ff6c26c8388d1027d02c000
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|028f65c23e91b0b4674ec89c203955db312c6626
-
 # SecureMSM (GPQESE)
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
