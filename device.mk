@@ -112,6 +112,19 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Camera (OnePlus)
+$(call inherit-product, vendor/addons/oneplus/camera-vendor.mk)
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.camera.privapp.list=com.oneplus.camera
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.lens.oem_camera_package=com.oneplus.camera \
+    ro.opcamera.support=true \
+    persist.camera.assert.panic=true \
+    persist.vendor.camera.privapp.list=com.oneplus.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.oneplus.camera
+
 # Charging
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.charger.enable_suspend=1
