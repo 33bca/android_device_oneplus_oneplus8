@@ -139,6 +139,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.common-V1-ndk_platform \
+    android.hardware.graphics.common-V1-ndk_platform.vendor \
     vendor.oneplus.hardware.display@1.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
